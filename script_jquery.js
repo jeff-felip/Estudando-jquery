@@ -14,9 +14,9 @@ $(document).ready(function(){//ready: aciona uma função ao carregar a página
     $('#vermelho').click(function(){
         $('p').css("background-color", "red");
         $('p').css("color", "white");
-        $('p').fadeOut("slow");//'slow': parametro para que o evento seja realizado mais lentamente
-        $('p').delay(2000);
-        $('p').fadeIn("fast");//'fast': parametro para que o evento seja realizado mais rapidamente
+        $('p').fadeOut(5000);//'slow': parametro para que o evento seja realizado mais lentamente
+        //$('p').delay(2000);
+        $('p').fadeIn(5000);//'fast': parametro para que o evento seja realizado mais rapidamente
         $('#mensagem').text("texto mudou para vermelho");//text: coloca o texto do paramentro no seletor;
         $('span')
             .css({border: "2px solid red", color: "red", margin: "1px 1px 1px 1px", padding: "5px 5px 5px 5px"}) //maneira mais elegante de mudar os atributos css
